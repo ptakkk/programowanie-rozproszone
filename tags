@@ -1,0 +1,82 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACK	util.h	/^#define ACK /;"	d
+APP_PKT	util.h	/^#define APP_PKT /;"	d
+Boss	util.h	/^    Boss = 0,$/;"	e	enum:__anon1
+FALSE	main.h	/^#define FALSE /;"	d
+FINISH	util.h	/^#define FINISH /;"	d
+FLAGS	Makefile	/^FLAGS=-g$/;"	m
+HEADERS	Makefile	/^HEADERS=$(SOURCES:.c=.h)$/;"	m
+MAINH	main.h	/^#define MAINH$/;"	d
+MAX_CAPACITY	util.h	/^#define MAX_CAPACITY /;"	d
+MAX_SMELL_TOTAL	util.h	/^#define MAX_SMELL_TOTAL /;"	d
+MPI_PAKIET_T	util.c	/^MPI_Datatype MPI_PAKIET_T;$/;"	v
+NITEMS	util.h	/^#define NITEMS /;"	d
+Otaku	util.h	/^    Otaku = 1,$/;"	e	enum:__anon1
+PriorityQueue	queue.h	/^} PriorityQueue;$/;"	t	typeref:struct:__anon5
+QUEUE_H	queue.h	/^#define QUEUE_H$/;"	d
+QueueElement	queue.h	/^} QueueElement;$/;"	t	typeref:struct:__anon4
+RELEASE	util.h	/^#define RELEASE /;"	d
+REQUEST	util.h	/^#define REQUEST /;"	d
+ROOT	main.h	/^#define ROOT /;"	d
+SEC_IN_STATE	main.h	/^#define SEC_IN_STATE /;"	d
+SOURCES	Makefile	/^SOURCES=$(wildcard *.c)$/;"	m
+STATE_CHANGE_PROB	main.h	/^#define STATE_CHANGE_PROB /;"	d
+StateFinish	util.h	/^    StateFinish,$/;"	e	enum:__anon3
+StateInPlace	util.h	/^    StateInPlace,$/;"	e	enum:__anon3
+StateInPlaceForever	util.h	/^    StateInPlaceForever,$/;"	e	enum:__anon3
+StateReady	util.h	/^    StateReady,$/;"	e	enum:__anon3
+StateWantPlace	util.h	/^    StateWantPlace,$/;"	e	enum:__anon3
+WATEK_KOMUNIKACYJNY_H	watek_komunikacyjny.h	/^#define WATEK_KOMUNIKACYJNY_H$/;"	d
+watek_glowny_H	watek_glowny.h	/^#define watek_glowny_H$/;"	d
+TRUE	main.h	/^#define TRUE /;"	d
+UTILH	util.h	/^#define UTILH$/;"	d
+ackCount	main.c	/^int ackCount = 0;$/;"	v
+broadcast	util.c	/^void broadcast(int tag)$/;"	f
+capacity	queue.h	/^    int capacity;$/;"	m	struct:__anon5
+check_thread_support	main.c	/^void check_thread_support(int provided)$/;"	f
+currentTime	main.c	/^int currentTime = 0;$/;"	v
+debug	main.h	/^#define debug(/;"	d
+dequeue	queue.c	/^void dequeue(int processId)$/;"	f
+elements	queue.h	/^    QueueElement *elements;$/;"	m	struct:__anon5
+enqueue	queue.c	/^void enqueue(int processId, int timestamp)$/;"	f
+finalizuj	main.c	/^void finalizuj()$/;"	f
+getPersonSmell	util.c	/^int getPersonSmell(int processId)$/;"	f
+getPersonType	util.c	/^person_type getPersonType(int processId)$/;"	f
+getPosition	queue.c	/^int getPosition(int processId)$/;"	f
+getSmellTotalUntilPosition	queue.c	/^int getSmellTotalUntilPosition(int position)$/;"	f
+initPacketType	util.c	/^void initPacketType()$/;"	f
+initPriorityQueue	queue.c	/^void initPriorityQueue(int capacity)$/;"	f
+main	main.c	/^int main(int argc, char **argv)$/;"	f
+mainLoop	watek_glowny.c	/^void mainLoop()$/;"	f
+max	watek_komunikacyjny.c	/^#define max(/;"	d	file:
+mutex	util.c	/^pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+name	util.c	/^    const char *name;$/;"	m	struct:tagNames_t	file:
+pThreadDeviceCharger	main.c	/^pthread_t pThreadDeviceCharger;$/;"	v
+pThreadListener	main.c	/^pthread_t pThreadListener;$/;"	v
+packet_t	util.h	/^} packet_t;$/;"	t	typeref:struct:__anon2
+peek	queue.c	/^int peek()$/;"	f
+personType	util.h	/^    person_type personType; \/* przykładowe pole z danymi; można zmienić nazwę na bardziej pasującą *\/$/;"	m	struct:__anon2
+person_type	util.h	/^} person_type;$/;"	t	typeref:enum:__anon1
+printQueue	queue.c	/^void printQueue()$/;"	f
+println	main.h	/^#define println(/;"	d
+processId	queue.h	/^    int processId;$/;"	m	struct:__anon4
+queue	main.c	/^PriorityQueue queue;$/;"	v
+rank	main.c	/^int rank, size;$/;"	v
+sendPacket	util.c	/^void sendPacket(int destination, int tag)$/;"	f
+size	main.c	/^int rank, size;$/;"	v
+size	queue.h	/^    int size;$/;"	m	struct:__anon5
+src	util.h	/^    int src;$/;"	m	struct:__anon2
+state	util.c	/^state_t state = StateReady;$/;"	v
+state_t	util.h	/^} state_t;$/;"	t	typeref:enum:__anon3
+tag	util.c	/^    int tag;$/;"	m	struct:tagNames_t	file:
+tag2string	util.c	/^const char *const tag2string(int tag)$/;"	f
+tagNames	util.c	/^} tagNames[] = {{"pakiet aplikacyjny", APP_PKT}, {"finish", FINISH}, {"potwierdzenie", ACK}, {"prośbę o sekcję krytyczną", REQUEST}, {"zwolnienie sekcji krytycznej", RELEASE}};$/;"	v	typeref:struct:tagNames_t
+tagNames_t	util.c	/^struct tagNames_t$/;"	s	file:
+threadListener	watek_komunikacyjny.c	/^void *threadListener(void *ptr)$/;"	f
+timestamp	queue.h	/^    int timestamp;$/;"	m	struct:__anon4
+ts	util.h	/^    int ts; \/* timestamp (zegar lamporta *\/$/;"	m	struct:__anon2
